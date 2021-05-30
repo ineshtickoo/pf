@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Monument";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Monument"), url("MonumentExtended-Regular.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /*border: solid white 1px;*/
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+}
+
+.inner {
+  background-color: #181818;
+  width: 55%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  border: 2px solid #2f2018;
+  border-top: none;
+  border-bottom: none;
+}
+
+.header {
+  /* border: 0.4px solid white; */
+}
+img {
+  pointer-events: none;
+
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#first img {
+  width: 100%;
+}
+.hed {
+  height: auto;
+}
+#first h1 {
+  transform: translateY(1.7vw);
+  font-family: "Monument", sans-serif;
+  font-size: 7.15vw;
+  padding-left: 5%;
+}
+#first .slight-text {
+  font-size: 2.2vw;
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    215deg,
+    rgba(255, 107, 17, 1) 0%,
+    rgba(255, 54, 45, 1) 100%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.slight-text {
+  -webkit-text-stroke: 0.3px #a34a0a90;
+  -webkit-text-fill-color: #261b19;
+}
+
+.expand {
+  display: block;
+  transition: 0.5s ease;
+  width: inherit;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 108, 17, 0.005) 0%,
+    rgba(255, 107, 17, 0) 100%
+  );
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+}
+.expand:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 108, 17, 0.089) 0%,
+    rgba(255, 107, 17, 0) 100%
+  );
+  padding-bottom: 10px;
+}
+#expand-icon {
+  padding-bottom: 20px;
+  color: white;
+  font-size: 34px;
+}
+
+#about {
+}
+
+#about h1 {
+  font-family: "Monument", sans-serif;
+  font-size: 3vw;
+}
+#about {
+  justify-content: flex-start;
+}
+
+.poop {
+  width: 80%;
+  margin: auto;
+}
+.poop .gradient-text {
+  font-weight: 500;
+}
+p {
+  font-family: "HelveticaNowDisplay";
+  color: white;
+  font-size: 2vw;
+  font-weight: 400;
+}
